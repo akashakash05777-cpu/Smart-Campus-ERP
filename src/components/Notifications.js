@@ -33,7 +33,8 @@ import {
 } from 'lucide-react';
 import { mockNotifications } from '../mock';
 import { useToast } from '../hooks/use-toast';
-import notificationPoolService from '../services/NotificationPoolService';
+// import notificationPoolService from '../services/NotificationPoolService';
+const notificationPoolService = require('../services/NotificationPoolService');
 import { useAuth } from '../contexts/AuthContext';
 
 const Notifications = () => {

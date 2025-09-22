@@ -206,7 +206,7 @@ function App() {
     <div className="App">
       <AuthProvider>
         <DataProvider>
-          <BrowserRouter>
+          <BrowserRouter basename="/Smart-Campus-ERP">
             <ProtectedApp />
           </BrowserRouter>
         </DataProvider>
