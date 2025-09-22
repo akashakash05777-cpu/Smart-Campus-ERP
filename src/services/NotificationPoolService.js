@@ -3,8 +3,8 @@
  * Service for managing notification pool operations
  */
 
-const notificationValidator = require('../utils/notificationvalidator');
-const notificationAuditLogger = require('../utils/NotificationAuditLogger');
+import notificationValidator from '../utils/notificationvalidator';
+import notificationAuditLogger from '../utils/NotificationAuditLogger';
 
 class NotificationPoolService {
   constructor() {
@@ -355,4 +355,4 @@ class NotificationPoolService {
 
 // Export a singleton instance
 const notificationPoolService = new NotificationPoolService();
-module.exports = notificationPoolService;
+export default notificationPoolService;

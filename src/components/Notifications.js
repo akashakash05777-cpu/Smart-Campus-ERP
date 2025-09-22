@@ -34,7 +34,7 @@ import {
 import { mockNotifications } from '../mock';
 import { useToast } from '../hooks/use-toast';
 import { useAuth } from '../contexts/AuthContext';
-const notificationPoolService = require('../services/NotificationPoolService');
+import notificationPoolService from '../services/NotificationPoolService';
 
 const Notifications = () => {
   const [searchTerm, setSearchTerm] = useState('');
