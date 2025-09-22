@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Smart-Campus-ERP/static/css/main.9abb354a.css",
-    "main.js": "/Smart-Campus-ERP/static/js/main.d18d3c85.js",
+    "main.js": "/Smart-Campus-ERP/static/js/main.669a0430.js",
     "static/js/453.2816558c.chunk.js": "/Smart-Campus-ERP/static/js/453.2816558c.chunk.js",
     "index.html": "/Smart-Campus-ERP/index.html",
     "main.9abb354a.css.map": "/Smart-Campus-ERP/static/css/main.9abb354a.css.map",
-    "main.d18d3c85.js.map": "/Smart-Campus-ERP/static/js/main.d18d3c85.js.map",
+    "main.669a0430.js.map": "/Smart-Campus-ERP/static/js/main.669a0430.js.map",
     "453.2816558c.chunk.js.map": "/Smart-Campus-ERP/static/js/453.2816558c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9abb354a.css",
-    "static/js/main.d18d3c85.js"
+    "static/js/main.669a0430.js"
   ]
 }
