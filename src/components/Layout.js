@@ -86,17 +86,17 @@ const Layout = ({ children }) => {
     
     // Full navigation for other roles
     const allNavigation = [
-      { name: 'Dashboard', href: 'dashboard', icon: LayoutDashboard, roles: ['Administrator', 'IT Admin'] },
-      { name: 'Admissions', href: 'admissions', icon: Users, roles: ['Administrator', 'IT Admin'] },
-      { name: 'Fee Collection', href: 'fees', icon: CreditCard, roles: ['Administrator', 'IT Admin'] },
-      { name: 'Hostel Management', href: 'hostel', icon: Building2, roles: ['Administrator', 'IT Admin'] },
-      { name: 'Exam Records', href: 'exams', icon: GraduationCap, roles: ['Administrator', 'IT Admin'] },
-      { name: 'Attendance', href: 'attendance', icon: CheckCircle, roles: ['Administrator', 'IT Admin'] },
-      { name: 'Library', href: 'library', icon: BookOpen, roles: ['Administrator', 'IT Admin'] },
-       { name: 'Transport', href: 'transport', icon: Truck, roles: ['Administrator', 'IT Admin'] },
-       { name: 'Staff Management', href: 'staff', icon: UserCheck, roles: ['Administrator', 'IT Admin'] },
-       { name: 'Notifications', href: 'notifications', icon: Bell, roles: ['Administrator', 'IT Admin'] },
-       { name: 'Settings', href: 'settings', icon: Settings, roles: ['Administrator', 'IT Admin'] },
+      { name: 'Dashboard', href: '/dashboard', icon: LayoutDashboard, roles: ['Administrator', 'IT Admin'] },
+      { name: 'Admissions', href: '/admissions', icon: Users, roles: ['Administrator', 'IT Admin'] },
+      { name: 'Fee Collection', href: '/fees', icon: CreditCard, roles: ['Administrator', 'IT Admin'] },
+      { name: 'Hostel Management', href: '/hostel', icon: Building2, roles: ['Administrator', 'IT Admin'] },
+      { name: 'Exam Records', href: '/exams', icon: GraduationCap, roles: ['Administrator', 'IT Admin'] },
+      { name: 'Attendance', href: '/attendance', icon: CheckCircle, roles: ['Administrator', 'IT Admin'] },
+      { name: 'Library', href: '/library', icon: BookOpen, roles: ['Administrator', 'IT Admin'] },
+      { name: 'Transport', href: '/transport', icon: Truck, roles: ['Administrator', 'IT Admin'] },
+      { name: 'Staff Management', href: '/staff', icon: UserCheck, roles: ['Administrator', 'IT Admin'] },
+      { name: 'Notifications', href: '/notifications', icon: Bell, roles: ['Administrator', 'IT Admin'] },
+      { name: 'Settings', href: '/settings', icon: Settings, roles: ['Administrator', 'IT Admin'] },
     ];
     
     return allNavigation.filter(item => 

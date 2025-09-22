@@ -202,11 +202,14 @@ function NotFound() {
 }
 
 function App() {
+  // Determine basename dynamically: use GH Pages base only when hosted on github.io
+  const isGitHubPages = typeof window !== 'undefined' && window.location.hostname.endsWith('github.io');
+  const routerBasename = isGitHubPages ? '/Smart-Campus-ERP' : undefined;
   return (
     <div className="App">
       <AuthProvider>
         <DataProvider>
-          <BrowserRouter basename="/Smart-Campus-ERP">
+          <BrowserRouter basename={routerBasename}>
             <ProtectedApp />
           </BrowserRouter>
         </DataProvider>
