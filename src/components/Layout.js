@@ -79,7 +79,6 @@ const Layout = ({ children }) => {
         { name: 'Attendance', href: '/attendance', icon: CheckCircle },
         { name: 'Students', href: '/students', icon: Users },
         { name: 'Leave Requests', href: '/leave-requests', icon: Bell },
-        { name: 'Notifications', href: '/notifications', icon: Bell },
         { name: 'Profile', href: '/settings', icon: Settings }
       ];
     }
@@ -95,7 +94,6 @@ const Layout = ({ children }) => {
       { name: 'Library', href: '/library', icon: BookOpen, roles: ['Administrator', 'IT Admin'] },
       { name: 'Transport', href: '/transport', icon: Truck, roles: ['Administrator', 'IT Admin'] },
       { name: 'Staff Management', href: '/staff', icon: UserCheck, roles: ['Administrator', 'IT Admin'] },
-      { name: 'Notifications', href: '/notifications', icon: Bell, roles: ['Administrator', 'IT Admin'] },
       { name: 'Settings', href: '/settings', icon: Settings, roles: ['Administrator', 'IT Admin'] },
     ];
     
@@ -113,52 +111,7 @@ const Layout = ({ children }) => {
            (href === '/dashboard' && currentPath === '/dashboard');
   };
 
-  const NotificationDropdown = () => (
-    <div className="absolute right-0 mt-2 w-80 bg-white rounded-lg shadow-lg border border-gray-200 z-50">
-      <div className="p-4 border-b border-gray-200">
-        <div className="flex items-center justify-between">
-          <h3 className="font-semibold text-gray-900">Notifications</h3>
-          <Button
-            variant="ghost"
-            size="sm"
-            onClick={() => setShowNotifications(false)}
-          >
-            <X className="h-4 w-4" />
-          </Button>
-        </div>
-      </div>
-      <div className="max-h-80 overflow-y-auto">
-        {mockNotifications.slice(0, 5).map((notification) => (
-          <div
-            key={notification.id}
-            className={`p-4 border-b border-gray-100 hover:bg-gray-50 transition-colors ${
-              !notification.read ? 'bg-blue-50' : ''
-            }`}
-          >
-            <div className="flex items-start space-x-3">
-              <div className={`w-2 h-2 rounded-full mt-2 ${!notification.read ? 'bg-red-500' : 'bg-gray-300'}`} />
-              <div className="flex-1">
-                <p className="text-sm font-medium text-gray-900">{notification.title}</p>
-                <p className="text-sm text-gray-600 mt-1">{notification.message}</p>
-                <p className="text-xs text-gray-400 mt-2">
-                  {new Date(notification.timestamp).toLocaleString()}
-                </p>
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>
-      <div className="p-4 border-t border-gray-200">
-        <Link
-          to="/notifications"
-          className="text-sm text-blue-600 hover:text-blue-800 font-medium"
-          onClick={() => setShowNotifications(false)}
-        >
-          View all notifications →
-        </Link>
-      </div>
-    </div>
-  );
+  const NotificationDropdown = () => null;
 
   return (
     <div className="min-h-screen bg-gray-100">
@@ -233,25 +186,7 @@ const Layout = ({ children }) => {
             </Button>
             
             {/* Notification Bell */}
-            <div className="relative">
-              <Button
-                variant="ghost"
-                size="sm"
-                onClick={() => setShowNotifications(!showNotifications)}
-                className="relative"
-              >
-                <Bell className="h-5 w-5" />
-                {unreadCount > 0 && (
-                  <Badge
-                    variant="destructive"
-                    className="absolute -top-1 -right-1 h-5 w-5 flex items-center justify-center p-0 text-xs bg-red-500"
-                  >
-                    {unreadCount}
-                  </Badge>
-                )}
-              </Button>
-              {showNotifications && <NotificationDropdown />}
-            </div>
+            {/* Notifications removed */}
             
             {/* User Profile Dropdown */}
             <DropdownMenu>

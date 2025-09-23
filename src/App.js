@@ -26,7 +26,6 @@ import AttendanceManagement from "./components/AttendanceManagement";
 import StaffManagement from "./components/StaffManagement";
 import TransportManagement from "./components/TransportManagement";
 import LibraryManagement from "./components/LibraryManagement";
-import Notifications from "./components/Notifications";
 import Settings from "./components/Settings";
 
 // Role-based route protection
@@ -116,11 +115,6 @@ const ProtectedApp = () => {
           </Layout>
         } />
         <Route path="/leave-requests" element={<Layout><LeaveRequests /></Layout>} />
-        <Route path="/notifications" element={
-          <Layout>
-            <Notifications />
-          </Layout>
-        } />
         <Route path="/admissions" element={<Layout><Admissions /></Layout>} />
         <Route 
           path="/fees" 

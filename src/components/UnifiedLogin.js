@@ -12,14 +12,14 @@ const UnifiedLogin = () => {
   
   // User type selection
   const [currentRole, setCurrentRole] = useState({
-    key: 'student',
-    placeholder: 'Student ID',
-    title: 'Student Login',
-    description: 'Enter your credentials to access the student portal',
-    bgGradient: 'from-green-50 to-emerald-100',
-    iconBg: 'bg-green-600',
-    icon: <GraduationCap className="h-8 w-8 text-white" />,
-    buttonColor: 'bg-green-600 hover:bg-green-700 text-white'
+    key: 'admin',
+    placeholder: 'Admin ID',
+    title: 'Admin Login',
+    description: 'Enter your credentials to access the admin portal',
+    bgGradient: 'from-red-50 to-rose-100',
+    iconBg: 'bg-red-600',
+    icon: <ShieldCheck className="h-8 w-8 text-white" />,
+    buttonColor: 'bg-red-600 hover:bg-red-700 text-white'
   });
 
   // Role configurations
@@ -369,10 +369,7 @@ const UnifiedLogin = () => {
           </CardContent>
         </Card>
 
-        {/* Footer */}
-        <div className="text-center mt-6 text-sm text-gray-500">
-          
-        </div>
+        
       </div>
     </div>
   );
