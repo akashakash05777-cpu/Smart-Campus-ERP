@@ -191,7 +191,7 @@ const StudentLogin = () => {
 
         {/* Footer */}
         <div className="text-center mt-6 text-sm text-gray-500">
-          <p>© 2024 SmartCampus. All rights reserved.</p>
+          
         </div>
       </div>
     </div>
