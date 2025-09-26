@@ -12,7 +12,7 @@ const Login = () => {
   const [formData, setFormData] = useState({
     username: '',
     password: '',
-    userType: 'student'
+    userType: 'admin'
   });
   const [showPassword, setShowPassword] = useState(false);
   const [errors, setErrors] = useState({});
